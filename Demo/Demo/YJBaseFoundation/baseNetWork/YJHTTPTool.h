@@ -10,4 +10,6 @@
 
 @interface YJHTTPTool : AFHTTPSessionManager
 
++ (NSURLSessionDataTask *)postWithUrl:(NSString *)url Parameter:(NSDictionary *)parm isShowLoading:(BOOL)isShowLoading block:(void(^)(NSDictionary *result ,NSError *error))callback;
+
 @end

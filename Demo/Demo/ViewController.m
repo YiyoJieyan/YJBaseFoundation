@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "YJHTTPTool.h"
+#import "YJHeader.h"
 
 @interface ViewController ()
 
@@ -37,7 +37,7 @@
                            @"token" : @"fd085eae91e6440bae9ff43fd4233f47"
                            };
     
-    [YJHTTPTool postWithUrl:@"shop/GoodsController/getGoodsListByCategory" Parameter:parm isShowLoading:NO block:^(id  _Nullable result, NSError *error) {
+    [YJHTTPTool postWithUrl:@"shop/GoodsController/getGoodsListByCategory" Parameter:parm isShowLoading:YES block:^(id  _Nullable result, NSError *error) {
         if (!error) {
             
 //            [self.tv setText:result];
@@ -46,6 +46,8 @@
         }else {
             
             NSError *errors = error;
+            
+            [YJTools showMessage:error.domain];
             
             NSLog(@"%zd\n",errors.code);
             NSLog(@"%@",error.domain);

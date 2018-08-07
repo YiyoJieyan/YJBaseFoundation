@@ -19,6 +19,7 @@
 		2866E37F2118237700279953 /* YJBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E37E2118237700279953 /* YJBaseTabBarViewController.m */; };
 		2866E3822118239400279953 /* YJBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3812118239400279953 /* YJBaseNavigationViewController.m */; };
 		2866E3C5211861DA00279953 /* YJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C4211861DA00279953 /* YJHTTPTool.m */; };
+		2866E3CA2119496200279953 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C92119496200279953 /* YJTools.m */; };
 		2CA2976380EA4F411E12C5EE /* libPods-DemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A972EB6DB23C98DE4980AC7E /* libPods-DemoUITests.a */; };
 		9B5E05B110CB59D38A5524EB /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C679FE7A007E26853E5791 /* libPods-Demo.a */; };
 		CCB2B43A0A06C3C312F49D43 /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A748A4B7D804FBD66825E2C /* libPods-DemoTests.a */; };
@@ -67,6 +68,9 @@
 		2866E3812118239400279953 /* YJBaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBaseNavigationViewController.m; sourceTree = "<group>"; };
 		2866E3C3211861DA00279953 /* YJHTTPTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHTTPTool.h; sourceTree = "<group>"; };
 		2866E3C4211861DA00279953 /* YJHTTPTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHTTPTool.m; sourceTree = "<group>"; };
+		2866E3C6211945DA00279953 /* YJHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHeader.h; sourceTree = "<group>"; };
+		2866E3C82119496200279953 /* YJTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTools.h; sourceTree = "<group>"; };
+		2866E3C92119496200279953 /* YJTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTools.m; sourceTree = "<group>"; };
 		3A748A4B7D804FBD66825E2C /* libPods-DemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85236F9BAE4F9B4245FDB380 /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		85C2E8631D2D84F76377CF4D /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		2866E3792118231C00279953 /* YJBaseFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				2866E3C6211945DA00279953 /* YJHeader.h */,
+				2866E3C7211948EC00279953 /* baseTool */,
 				2866E3C2211860F800279953 /* baseNetWork */,
 				2866E3C1211860D300279953 /* baseViewController */,
 			);
@@ -191,6 +197,15 @@
 				2866E3C4211861DA00279953 /* YJHTTPTool.m */,
 			);
 			path = baseNetWork;
+			sourceTree = "<group>";
+		};
+		2866E3C7211948EC00279953 /* baseTool */ = {
+			isa = PBXGroup;
+			children = (
+				2866E3C82119496200279953 /* YJTools.h */,
+				2866E3C92119496200279953 /* YJTools.m */,
+			);
+			path = baseTool;
 			sourceTree = "<group>";
 		};
 		80E71C6D233A94DDFDFE8A47 /* Frameworks */ = {
@@ -227,6 +242,7 @@
 				2866E3402118231400279953 /* Sources */,
 				2866E3412118231400279953 /* Frameworks */,
 				2866E3422118231400279953 /* Resources */,
+				9E0CD8D46D4C5B5F06F483B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,6 +379,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9E0CD8D46D4C5B5F06F483B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AEEE695D9B13FE98CA133C28 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2866E3CA2119496200279953 /* YJTools.m in Sources */,
 				2866E34C2118231400279953 /* ViewController.m in Sources */,
 				2866E3572118231600279953 /* main.m in Sources */,
 				2866E3822118239400279953 /* YJBaseNavigationViewController.m in Sources */,

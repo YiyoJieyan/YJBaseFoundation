@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WRNavigationBar.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [WRNavigationBar wr_setDefaultNavBarShadowImageHidden:YES];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-100, 0)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    if (@available(iOS 11.0, *)) {
+        [[UINavigationBar appearance] setPrefersLargeTitles:true];
+    } else {
+        // Fallback on earlier versions
+    }
     return YES;
 }
 

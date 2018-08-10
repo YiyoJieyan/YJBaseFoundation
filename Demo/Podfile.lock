@@ -16,23 +16,27 @@ PODS:
     - AFNetworking/NSURLSession
   - MJExtension (3.0.15.1)
   - SVProgressHUD (2.2.5)
+  - WRNavigationBar (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking
   - MJExtension
   - SVProgressHUD
+  - WRNavigationBar (~> 1.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
     - MJExtension
     - SVProgressHUD
+    - WRNavigationBar
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
 
-PODFILE CHECKSUM: 7f903b4d3b82797deb3da56c822b606ba6ae61bf
+PODFILE CHECKSUM: 8fcf39f47aeb6c8c2ed0d240aff7fd1a96c27762
 
 COCOAPODS: 1.5.3

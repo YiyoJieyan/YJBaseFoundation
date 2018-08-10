@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "YJBaseFoundation"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "YJBaseFoundation"
 
   
@@ -35,5 +35,7 @@ Pod::Spec.new do |s|
   s.dependency 'AFNetworking'
   s.dependency 'Masonry'
   s.dependency 'SVProgressHUD'
+  s.dependency 'MJExtension'
+
 
 end

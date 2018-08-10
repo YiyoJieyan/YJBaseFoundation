@@ -20,6 +20,11 @@
 		2866E3822118239400279953 /* YJBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3812118239400279953 /* YJBaseNavigationViewController.m */; };
 		2866E3C5211861DA00279953 /* YJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C4211861DA00279953 /* YJHTTPTool.m */; };
 		2866E3CA2119496200279953 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C92119496200279953 /* YJTools.m */; };
+		28B8354E211C4D370045DF17 /* LargeTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */; };
+		28B83554211D2E960045DF17 /* StoreCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83553211D2E960045DF17 /* StoreCollectionViewController.m */; };
+		28B83558211D30680045DF17 /* UIColor+FJUIColor_HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83556211D30680045DF17 /* UIColor+FJUIColor_HEX.m */; };
+		28B8355B211D309D0045DF17 /* UIView+Metrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8355A211D309D0045DF17 /* UIView+Metrics.m */; };
+		28B83560211D72F60045DF17 /* UIView+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8355F211D72F50045DF17 /* UIView+Style.m */; };
 		2CA2976380EA4F411E12C5EE /* libPods-DemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A972EB6DB23C98DE4980AC7E /* libPods-DemoUITests.a */; };
 		9B5E05B110CB59D38A5524EB /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C679FE7A007E26853E5791 /* libPods-Demo.a */; };
 		CCB2B43A0A06C3C312F49D43 /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A748A4B7D804FBD66825E2C /* libPods-DemoTests.a */; };
@@ -71,6 +76,17 @@
 		2866E3C6211945DA00279953 /* YJHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHeader.h; sourceTree = "<group>"; };
 		2866E3C82119496200279953 /* YJTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTools.h; sourceTree = "<group>"; };
 		2866E3C92119496200279953 /* YJTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTools.m; sourceTree = "<group>"; };
+		28B8354C211C4D370045DF17 /* LargeTitleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargeTitleTableViewController.h; sourceTree = "<group>"; };
+		28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeTitleTableViewController.m; sourceTree = "<group>"; };
+		28B83552211D2E960045DF17 /* StoreCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreCollectionViewController.h; sourceTree = "<group>"; };
+		28B83553211D2E960045DF17 /* StoreCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreCollectionViewController.m; sourceTree = "<group>"; };
+		28B83556211D30680045DF17 /* UIColor+FJUIColor_HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FJUIColor_HEX.m"; sourceTree = "<group>"; };
+		28B83557211D30680045DF17 /* UIColor+FJUIColor_HEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FJUIColor_HEX.h"; sourceTree = "<group>"; };
+		28B83559211D309D0045DF17 /* UIView+Metrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Metrics.h"; sourceTree = "<group>"; };
+		28B8355A211D309D0045DF17 /* UIView+Metrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Metrics.m"; sourceTree = "<group>"; };
+		28B8355D211D30F10045DF17 /* YJPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJPch.pch; sourceTree = "<group>"; };
+		28B8355E211D72F50045DF17 /* UIView+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Style.h"; sourceTree = "<group>"; };
+		28B8355F211D72F50045DF17 /* UIView+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Style.m"; sourceTree = "<group>"; };
 		3A748A4B7D804FBD66825E2C /* libPods-DemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85236F9BAE4F9B4245FDB380 /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		85C2E8631D2D84F76377CF4D /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,11 +150,12 @@
 		2866E3462118231400279953 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				28B8355C211D30D20045DF17 /* Main */,
 				2866E3792118231C00279953 /* YJBaseFoundation */,
-				2866E3472118231400279953 /* AppDelegate.h */,
-				2866E3482118231400279953 /* AppDelegate.m */,
-				2866E34A2118231400279953 /* ViewController.h */,
-				2866E34B2118231400279953 /* ViewController.m */,
+				28B8354C211C4D370045DF17 /* LargeTitleTableViewController.h */,
+				28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */,
+				28B83552211D2E960045DF17 /* StoreCollectionViewController.h */,
+				28B83553211D2E960045DF17 /* StoreCollectionViewController.m */,
 				2866E34D2118231400279953 /* Main.storyboard */,
 				2866E3502118231600279953 /* Assets.xcassets */,
 				2866E3522118231600279953 /* LaunchScreen.storyboard */,
@@ -170,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				2866E3C6211945DA00279953 /* YJHeader.h */,
+				28B83555211D30320045DF17 /* Category */,
 				2866E3C7211948EC00279953 /* baseTool */,
 				2866E3C2211860F800279953 /* baseNetWork */,
 				2866E3C1211860D300279953 /* baseViewController */,
@@ -206,6 +224,31 @@
 				2866E3C92119496200279953 /* YJTools.m */,
 			);
 			path = baseTool;
+			sourceTree = "<group>";
+		};
+		28B83555211D30320045DF17 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				28B8355E211D72F50045DF17 /* UIView+Style.h */,
+				28B8355F211D72F50045DF17 /* UIView+Style.m */,
+				28B83557211D30680045DF17 /* UIColor+FJUIColor_HEX.h */,
+				28B83556211D30680045DF17 /* UIColor+FJUIColor_HEX.m */,
+				28B83559211D309D0045DF17 /* UIView+Metrics.h */,
+				28B8355A211D309D0045DF17 /* UIView+Metrics.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		28B8355C211D30D20045DF17 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2866E3472118231400279953 /* AppDelegate.h */,
+				2866E3482118231400279953 /* AppDelegate.m */,
+				2866E34A2118231400279953 /* ViewController.h */,
+				2866E34B2118231400279953 /* ViewController.m */,
+				28B8355D211D30F10045DF17 /* YJPch.pch */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		80E71C6D233A94DDFDFE8A47 /* Frameworks */ = {
@@ -443,8 +486,13 @@
 				2866E3CA2119496200279953 /* YJTools.m in Sources */,
 				2866E34C2118231400279953 /* ViewController.m in Sources */,
 				2866E3572118231600279953 /* main.m in Sources */,
+				28B83558211D30680045DF17 /* UIColor+FJUIColor_HEX.m in Sources */,
 				2866E3822118239400279953 /* YJBaseNavigationViewController.m in Sources */,
 				2866E37F2118237700279953 /* YJBaseTabBarViewController.m in Sources */,
+				28B8355B211D309D0045DF17 /* UIView+Metrics.m in Sources */,
+				28B83560211D72F60045DF17 /* UIView+Style.m in Sources */,
+				28B8354E211C4D370045DF17 /* LargeTitleTableViewController.m in Sources */,
+				28B83554211D2E960045DF17 /* StoreCollectionViewController.m in Sources */,
 				2866E3C5211861DA00279953 /* YJHTTPTool.m in Sources */,
 				2866E37C2118235300279953 /* YJBaseViewController.m in Sources */,
 				2866E3492118231400279953 /* AppDelegate.m in Sources */,
@@ -619,6 +667,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B893F2ZP58;
+				GCC_PREFIX_HEADER = /Users/FunnyUncle1/Desktop/baseFile/YJBaseFoundation/Demo/Demo/Main/YJPch.pch;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -637,6 +686,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B893F2ZP58;
+				GCC_PREFIX_HEADER = /Users/FunnyUncle1/Desktop/baseFile/YJBaseFoundation/Demo/Demo/Main/YJPch.pch;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

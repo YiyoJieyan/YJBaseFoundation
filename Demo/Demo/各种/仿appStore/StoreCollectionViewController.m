@@ -9,6 +9,7 @@
 #import "StoreCollectionViewController.h"
 #import "YJHeader.h"
 #import "WRNavigationBar.h"
+#import "StoreSubViewController.h"
 
 @interface StoreCollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -21,7 +22,7 @@
 @property (nonatomic, assign)NSInteger count;
 
 @end
-
+#warning https://github.com/YvanLiu/PushTransitionDemo 已实现
 @implementation StoreCollectionViewController
 
 - (UICollectionViewFlowLayout *)layout {
@@ -56,11 +57,11 @@
     
     for (int i = 0; i < self.count; i++) {
         
-        UIViewController *vc = [[UIViewController alloc]init];
+        StoreSubViewController *vc = [[StoreSubViewController alloc]init];
 
-        [vc.view setBackgroundColor:[UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]];
+//        [vc.view setBackgroundColor:[UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]];
         
-        [vc.view setBorderwithColor:[UIColor lightGrayColor] withWidth:10];
+//        [vc.view setBorderwithColor:[UIColor lightGrayColor] withWidth:10];
         
         [self addChildViewController:vc];
         
@@ -141,23 +142,31 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+//    UIView *vcView = self.childViewControllers[indexPath.row].view;
+//
+//    [vcView setFrame:CGRectMake(0, 0, VIEWWIDTH, VIEWHEIGHT)];
+//
+//    [self.view addSubview:self.childViewControllers[indexPath.row].view];
+    
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
 
     [UIView animateWithDuration:0.1 animations:^{
-        
-        cell.transform = CGAffineTransformMakeScale(0.95, 0.95);
+
+        cell.bounds = self.view.bounds;
 
     } completion:^(BOOL finished) {
-        
-        [UIView animateWithDuration:0.1 animations:^{
-            
-            cell.transform = CGAffineTransformMakeScale(1.0, 1.0);
 
-        } completion:^(BOOL finished) {
-            //这里实现点击cell后要实现的内容
-            
-        }];
-        
+//        [UIView animateWithDuration:0.1 animations:^{
+//
+//            cell.transform = CGAffineTransformMakeScale(1.0, 1.0);
+//
+//        } completion:^(BOOL finished) {
+//            //这里实现点击cell后要实现的内容
+//
+//
+//
+//        }];
+
     }];
     
 }
@@ -219,7 +228,12 @@
     
     [vcView addSubview:view];
     
+    UIView *cover = [[UIView alloc]initWithFrame:cell.bounds];
+    
+    [cover setBackgroundColor:[UIColor clearColor]];
+    
     [cell.contentView addSubview:vcView];
+    [cell.contentView addSubview:cover];
     cell.contentView.layer.cornerRadius = 18;
     cell.contentView.layer.shadowColor= [UIColor blackColor].CGColor;
     cell.contentView.layer.shadowOffset=CGSizeMake(0, 0);

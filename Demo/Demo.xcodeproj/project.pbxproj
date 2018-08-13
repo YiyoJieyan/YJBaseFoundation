@@ -25,6 +25,9 @@
 		28B83558211D30680045DF17 /* UIColor+FJUIColor_HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83556211D30680045DF17 /* UIColor+FJUIColor_HEX.m */; };
 		28B8355B211D309D0045DF17 /* UIView+Metrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8355A211D309D0045DF17 /* UIView+Metrics.m */; };
 		28B83560211D72F60045DF17 /* UIView+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8355F211D72F50045DF17 /* UIView+Style.m */; };
+		28B83563211D742F0045DF17 /* StoreSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83562211D742F0045DF17 /* StoreSubViewController.m */; };
+		28B8356A21215D290045DF17 /* lockTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8356821215D290045DF17 /* lockTableViewController.m */; };
+		28B8356B21215D290045DF17 /* lockTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B8356921215D290045DF17 /* lockTableViewController.xib */; };
 		2CA2976380EA4F411E12C5EE /* libPods-DemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A972EB6DB23C98DE4980AC7E /* libPods-DemoUITests.a */; };
 		9B5E05B110CB59D38A5524EB /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C679FE7A007E26853E5791 /* libPods-Demo.a */; };
 		CCB2B43A0A06C3C312F49D43 /* libPods-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A748A4B7D804FBD66825E2C /* libPods-DemoTests.a */; };
@@ -87,6 +90,11 @@
 		28B8355D211D30F10045DF17 /* YJPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJPch.pch; sourceTree = "<group>"; };
 		28B8355E211D72F50045DF17 /* UIView+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Style.h"; sourceTree = "<group>"; };
 		28B8355F211D72F50045DF17 /* UIView+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Style.m"; sourceTree = "<group>"; };
+		28B83561211D742F0045DF17 /* StoreSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreSubViewController.h; sourceTree = "<group>"; };
+		28B83562211D742F0045DF17 /* StoreSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreSubViewController.m; sourceTree = "<group>"; };
+		28B8356721215D290045DF17 /* lockTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lockTableViewController.h; sourceTree = "<group>"; };
+		28B8356821215D290045DF17 /* lockTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lockTableViewController.m; sourceTree = "<group>"; };
+		28B8356921215D290045DF17 /* lockTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = lockTableViewController.xib; sourceTree = "<group>"; };
 		3A748A4B7D804FBD66825E2C /* libPods-DemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85236F9BAE4F9B4245FDB380 /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		85C2E8631D2D84F76377CF4D /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,8 +162,9 @@
 				2866E3792118231C00279953 /* YJBaseFoundation */,
 				28B8354C211C4D370045DF17 /* LargeTitleTableViewController.h */,
 				28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */,
-				28B83552211D2E960045DF17 /* StoreCollectionViewController.h */,
-				28B83553211D2E960045DF17 /* StoreCollectionViewController.m */,
+				28B8356421215CDE0045DF17 /* 各种 */,
+				2866E34A2118231400279953 /* ViewController.h */,
+				2866E34B2118231400279953 /* ViewController.m */,
 				2866E34D2118231400279953 /* Main.storyboard */,
 				2866E3502118231600279953 /* Assets.xcassets */,
 				2866E3522118231600279953 /* LaunchScreen.storyboard */,
@@ -244,11 +253,39 @@
 			children = (
 				2866E3472118231400279953 /* AppDelegate.h */,
 				2866E3482118231400279953 /* AppDelegate.m */,
-				2866E34A2118231400279953 /* ViewController.h */,
-				2866E34B2118231400279953 /* ViewController.m */,
 				28B8355D211D30F10045DF17 /* YJPch.pch */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		28B8356421215CDE0045DF17 /* 各种 */ = {
+			isa = PBXGroup;
+			children = (
+				28B8356621215D070045DF17 /* 锁 */,
+				28B8356521215CF00045DF17 /* 仿appStore */,
+			);
+			path = "各种";
+			sourceTree = "<group>";
+		};
+		28B8356521215CF00045DF17 /* 仿appStore */ = {
+			isa = PBXGroup;
+			children = (
+				28B83552211D2E960045DF17 /* StoreCollectionViewController.h */,
+				28B83553211D2E960045DF17 /* StoreCollectionViewController.m */,
+				28B83561211D742F0045DF17 /* StoreSubViewController.h */,
+				28B83562211D742F0045DF17 /* StoreSubViewController.m */,
+			);
+			path = "仿appStore";
+			sourceTree = "<group>";
+		};
+		28B8356621215D070045DF17 /* 锁 */ = {
+			isa = PBXGroup;
+			children = (
+				28B8356721215D290045DF17 /* lockTableViewController.h */,
+				28B8356821215D290045DF17 /* lockTableViewController.m */,
+				28B8356921215D290045DF17 /* lockTableViewController.xib */,
+			);
+			path = "锁";
 			sourceTree = "<group>";
 		};
 		80E71C6D233A94DDFDFE8A47 /* Frameworks */ = {
@@ -381,6 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B8356B21215D290045DF17 /* lockTableViewController.xib in Resources */,
 				2866E3542118231600279953 /* LaunchScreen.storyboard in Resources */,
 				2866E3512118231600279953 /* Assets.xcassets in Resources */,
 				2866E34F2118231400279953 /* Main.storyboard in Resources */,
@@ -483,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B8356A21215D290045DF17 /* lockTableViewController.m in Sources */,
 				2866E3CA2119496200279953 /* YJTools.m in Sources */,
 				2866E34C2118231400279953 /* ViewController.m in Sources */,
 				2866E3572118231600279953 /* main.m in Sources */,
@@ -496,6 +535,7 @@
 				2866E3C5211861DA00279953 /* YJHTTPTool.m in Sources */,
 				2866E37C2118235300279953 /* YJBaseViewController.m in Sources */,
 				2866E3492118231400279953 /* AppDelegate.m in Sources */,
+				28B83563211D742F0045DF17 /* StoreSubViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

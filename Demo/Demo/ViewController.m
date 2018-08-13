@@ -10,6 +10,8 @@
 #import "YJHeader.h"
 #import "LargeTitleTableViewController.h"
 #import "StoreCollectionViewController.h"
+#import "StoreSubViewController.h"
+#import "lockTableViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -24,12 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.array = @[@"one",@"two",@"three"];
 
     [self.tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 
-    self.title = @"wowo";
-    
+    self.title = @"XJB";
+   
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -47,24 +48,14 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0:
-        {
-            LargeTitleTableViewController *vc = [[LargeTitleTableViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-        case 1:
-        {
-            StoreCollectionViewController *vc = [[StoreCollectionViewController alloc]init];
-            
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-            
-        default:
-            break;
-    }
+    
+    NSDictionary *dc = self.array[indexPath.row];
+    
+    UIViewController *vc = dc[@"vc"];
+    vc.title = dc[@"title"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -79,7 +70,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    [cell.textLabel setText:self.array[indexPath.row]];
+    [cell.textLabel setText:self.array[indexPath.row][@"title"]];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
@@ -87,7 +78,12 @@
     
 }
 
-
+- (NSArray *)array {
+    if (!_array) {
+        _array = @[@{@"title":@"largeTitle",@"vc":[[LargeTitleTableViewController alloc]init]},@{@"title":@"仿appStore",@"vc":[[StoreCollectionViewController alloc]init]},@{@"title":@"锁",@"vc":[[lockTableViewController alloc]init]}];
+    }
+    return _array;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

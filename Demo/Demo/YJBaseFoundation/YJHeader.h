@@ -11,6 +11,7 @@
 #import "UIColor+FJUIColor_HEX.h"
 #import "UIView+Metrics.h"
 #import "UIView+Style.h"
+#import "Masonry.h"
 
 #ifndef YJHeader_h
 #define YJHeader_h

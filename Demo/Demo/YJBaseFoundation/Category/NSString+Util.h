@@ -10,4 +10,18 @@
 
 @interface NSString (Util)
 
+/**
+ 返回内容高度(筛选\n)
+ */
++(CGFloat)getHeightWithString:(NSString *)string width:(CGFloat)width size:(NSInteger)size isBold:(BOOL)isBold;
+/**
+ ASCII 编码
+ */
++ (NSString *)getASCIIStr:(NSString *)content;
+/**
+ ASCII 解码
+ */
++ (NSString *)decodeASCIIStr:(NSString *)content;
+
+
 @end

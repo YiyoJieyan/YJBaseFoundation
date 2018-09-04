@@ -10,4 +10,25 @@
 
 @interface NSString (Date)
 
+/**
+ 获取当前年月日
+ */
++(NSString *)getTodayStrYMD;
+/**
+ 获取当前年月日 星期
+ */
++(NSString *)getTodayStrYMDWeek;
+/**
+ 获取当前时间戳
+ */
++ (NSInteger *)getNowTimestamp;
+/**
+ 根据date获取年月日
+ */
++(NSString *)ymdStrWithDate:(NSDate *)date;
+/**
+ 根据date获取年月日 + 星期
+ */
++(NSString *)ymdStrWeekWithDate:(NSDate *)date;
+
 @end

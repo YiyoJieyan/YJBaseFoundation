@@ -21,6 +21,11 @@
 		2866E3C5211861DA00279953 /* YJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C4211861DA00279953 /* YJHTTPTool.m */; };
 		2866E3CA2119496200279953 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C92119496200279953 /* YJTools.m */; };
 		289AFCC1213789AA00812356 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 289AFCC0213789AA00812356 /* NSString+Date.m */; };
+		289AFCC72137BBC600812356 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 289AFCC62137BBC600812356 /* NSString+Util.m */; };
+		289AFCCD2138DAD300812356 /* labelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289AFCCB2138DAD300812356 /* labelViewController.m */; };
+		289AFCCE2138DAD300812356 /* labelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289AFCCC2138DAD300812356 /* labelViewController.xib */; };
+		289AFCD72138DB5100812356 /* uiTestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289AFCD52138DB5100812356 /* uiTestTableViewController.m */; };
+		289AFCD82138DB5100812356 /* uiTestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 289AFCD62138DB5100812356 /* uiTestTableViewController.xib */; };
 		28B8354E211C4D370045DF17 /* LargeTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */; };
 		28B83554211D2E960045DF17 /* StoreCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83553211D2E960045DF17 /* StoreCollectionViewController.m */; };
 		28B83558211D30680045DF17 /* UIColor+FJUIColor_HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83556211D30680045DF17 /* UIColor+FJUIColor_HEX.m */; };
@@ -83,6 +88,14 @@
 		2866E3C92119496200279953 /* YJTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTools.m; sourceTree = "<group>"; };
 		289AFCBF213789AA00812356 /* NSString+Date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
 		289AFCC0213789AA00812356 /* NSString+Date.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
+		289AFCC52137BBC600812356 /* NSString+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
+		289AFCC62137BBC600812356 /* NSString+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		289AFCCA2138DAD300812356 /* labelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = labelViewController.h; sourceTree = "<group>"; };
+		289AFCCB2138DAD300812356 /* labelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = labelViewController.m; sourceTree = "<group>"; };
+		289AFCCC2138DAD300812356 /* labelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = labelViewController.xib; sourceTree = "<group>"; };
+		289AFCD42138DB5100812356 /* uiTestTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uiTestTableViewController.h; sourceTree = "<group>"; };
+		289AFCD52138DB5100812356 /* uiTestTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uiTestTableViewController.m; sourceTree = "<group>"; };
+		289AFCD62138DB5100812356 /* uiTestTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = uiTestTableViewController.xib; sourceTree = "<group>"; };
 		28B8354C211C4D370045DF17 /* LargeTitleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargeTitleTableViewController.h; sourceTree = "<group>"; };
 		28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeTitleTableViewController.m; sourceTree = "<group>"; };
 		28B83552211D2E960045DF17 /* StoreCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreCollectionViewController.h; sourceTree = "<group>"; };
@@ -254,6 +267,29 @@
 			path = baseTool;
 			sourceTree = "<group>";
 		};
+		289AFCC82138DA9B00812356 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				289AFCD42138DB5100812356 /* uiTestTableViewController.h */,
+				289AFCD52138DB5100812356 /* uiTestTableViewController.m */,
+				289AFCD62138DB5100812356 /* uiTestTableViewController.xib */,
+				289AFCC92138DAAF00812356 /* label */,
+				28B8356521215CF00045DF17 /* 仿appStore */,
+				28399032212FDFC80038D82D /* largetitle */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		289AFCC92138DAAF00812356 /* label */ = {
+			isa = PBXGroup;
+			children = (
+				289AFCCA2138DAD300812356 /* labelViewController.h */,
+				289AFCCB2138DAD300812356 /* labelViewController.m */,
+				289AFCCC2138DAD300812356 /* labelViewController.xib */,
+			);
+			path = label;
+			sourceTree = "<group>";
+		};
 		28B83555211D30320045DF17 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +301,8 @@
 				28B8355A211D309D0045DF17 /* UIView+Metrics.m */,
 				289AFCBF213789AA00812356 /* NSString+Date.h */,
 				289AFCC0213789AA00812356 /* NSString+Date.m */,
+				289AFCC52137BBC600812356 /* NSString+Util.h */,
+				289AFCC62137BBC600812356 /* NSString+Util.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -282,10 +320,9 @@
 		28B8356421215CDE0045DF17 /* 各种 */ = {
 			isa = PBXGroup;
 			children = (
-				28399032212FDFC80038D82D /* largetitle */,
+				289AFCC82138DA9B00812356 /* UI */,
 				28399030212FDE4D0038D82D /* delegate */,
 				28B8356621215D070045DF17 /* 锁 */,
-				28B8356521215CF00045DF17 /* 仿appStore */,
 			);
 			path = "各种";
 			sourceTree = "<group>";
@@ -401,7 +438,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = demo;
+				ORGANIZATIONNAME = YJProject;
 				TargetAttributes = {
 					2866E3432118231400279953 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -417,7 +454,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2866E33F2118231400279953 /* Build configuration list for PBXProject "YJProject" */;
+			buildConfigurationList = 2866E33F2118231400279953 /* Build configuration list for PBXProject "demo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -445,7 +482,9 @@
 				28B8356B21215D290045DF17 /* lockTableViewController.xib in Resources */,
 				2866E3542118231600279953 /* LaunchScreen.storyboard in Resources */,
 				2866E3512118231600279953 /* Assets.xcassets in Resources */,
+				289AFCCE2138DAD300812356 /* labelViewController.xib in Resources */,
 				2866E34F2118231400279953 /* Main.storyboard in Resources */,
+				289AFCD82138DB5100812356 /* uiTestTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,9 +588,11 @@
 				2866E3CA2119496200279953 /* YJTools.m in Sources */,
 				2866E34C2118231400279953 /* ViewController.m in Sources */,
 				2866E3572118231600279953 /* main.m in Sources */,
+				289AFCC72137BBC600812356 /* NSString+Util.m in Sources */,
 				28B83558211D30680045DF17 /* UIColor+FJUIColor_HEX.m in Sources */,
 				2866E3822118239400279953 /* YJBaseNavigationViewController.m in Sources */,
 				2866E37F2118237700279953 /* YJBaseTabBarViewController.m in Sources */,
+				289AFCD72138DB5100812356 /* uiTestTableViewController.m in Sources */,
 				28B8355B211D309D0045DF17 /* UIView+Metrics.m in Sources */,
 				28B83560211D72F60045DF17 /* UIView+Style.m in Sources */,
 				28B8354E211C4D370045DF17 /* LargeTitleTableViewController.m in Sources */,
@@ -561,6 +602,7 @@
 				2866E37C2118235300279953 /* YJBaseViewController.m in Sources */,
 				2866E3492118231400279953 /* AppDelegate.m in Sources */,
 				28B83563211D742F0045DF17 /* StoreSubViewController.m in Sources */,
+				289AFCCD2138DAD300812356 /* labelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,7 +833,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yj.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJProject.temp_caseinsensitive_rename.app/YJProject.temp_caseinsensitive_rename";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.temp_caseinsensitive_rename.app/demo.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -810,7 +852,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yj.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJProject.temp_caseinsensitive_rename.app/YJProject.temp_caseinsensitive_rename";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo.temp_caseinsensitive_rename.app/demo.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -819,6 +861,7 @@
 			baseConfigurationReference = EF0D8E8E8993626E58A4C3EC /* Pods-DemoUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B893F2ZP58;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -837,6 +880,7 @@
 			baseConfigurationReference = 85236F9BAE4F9B4245FDB380 /* Pods-DemoUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B893F2ZP58;
 				INFOPLIST_FILE = DemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -853,7 +897,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2866E33F2118231400279953 /* Build configuration list for PBXProject "YJProject" */ = {
+		2866E33F2118231400279953 /* Build configuration list for PBXProject "demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2866E36E2118231600279953 /* Debug */,

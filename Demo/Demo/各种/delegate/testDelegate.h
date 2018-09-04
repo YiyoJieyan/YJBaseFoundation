@@ -10,4 +10,6 @@
 
 @protocol testDelegate <NSObject>
 
+- (void)vcConnect;
+
 @end

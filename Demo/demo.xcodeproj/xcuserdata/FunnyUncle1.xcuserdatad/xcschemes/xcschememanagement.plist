@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>yjProject.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2866E3432118231400279953</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2866E35B2118231600279953</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2866E3662118231600279953</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

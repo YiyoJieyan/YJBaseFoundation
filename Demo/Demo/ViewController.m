@@ -12,8 +12,9 @@
 #import "StoreCollectionViewController.h"
 #import "StoreSubViewController.h"
 #import "lockTableViewController.h"
+#import "uiTestTableViewController.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,LargeTitleTableViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
 
@@ -46,15 +47,36 @@
     }
 }
 
+- (void)clickCellIndex:(NSInteger)index {
+    
+    UITableViewCell *cell = [self.tableview cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+    
+    [cell.textLabel setText:[NSString stringWithFormat:@"选择了 %zd 行",index]];
+    
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSDictionary *dc = self.array[indexPath.row];
     
-    UIViewController *vc = dc[@"vc"];
-    vc.title = dc[@"title"];
     
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    if (indexPath.row == 0) {
+        
+        LargeTitleTableViewController *vc = [[LargeTitleTableViewController alloc]init];
+        vc.delegate = self;
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else {
+        
+        UIViewController *vc;
+        vc.title = dc[@"title"];
+        vc = dc[@"vc"];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }
+    
+    
     
 }
 
@@ -80,7 +102,7 @@
 
 - (NSArray *)array {
     if (!_array) {
-        _array = @[@{@"title":@"largeTitle",@"vc":[[LargeTitleTableViewController alloc]init]},@{@"title":@"仿appStore",@"vc":[[StoreCollectionViewController alloc]init]},@{@"title":@"锁",@"vc":[[lockTableViewController alloc]init]}];
+        _array = @[@{@"title":@"代理",@"vc":@""},@{@"title":@"UI",@"vc":[[uiTestTableViewController alloc]init]},@{@"title":@"锁",@"vc":[[lockTableViewController alloc]init]}];
     }
     return _array;
 }

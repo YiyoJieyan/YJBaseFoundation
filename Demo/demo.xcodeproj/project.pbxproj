@@ -20,6 +20,7 @@
 		2866E3822118239400279953 /* YJBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3812118239400279953 /* YJBaseNavigationViewController.m */; };
 		2866E3C5211861DA00279953 /* YJHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C4211861DA00279953 /* YJHTTPTool.m */; };
 		2866E3CA2119496200279953 /* YJTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2866E3C92119496200279953 /* YJTools.m */; };
+		289AFCC1213789AA00812356 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 289AFCC0213789AA00812356 /* NSString+Date.m */; };
 		28B8354E211C4D370045DF17 /* LargeTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */; };
 		28B83554211D2E960045DF17 /* StoreCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83553211D2E960045DF17 /* StoreCollectionViewController.m */; };
 		28B83558211D30680045DF17 /* UIColor+FJUIColor_HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B83556211D30680045DF17 /* UIColor+FJUIColor_HEX.m */; };
@@ -52,7 +53,8 @@
 
 /* Begin PBXFileReference section */
 		17C679FE7A007E26853E5791 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2866E3442118231400279953 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28399031212FDEF10038D82D /* testDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testDelegate.h; sourceTree = "<group>"; };
+		2866E3442118231400279953 /* yjProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yjProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2866E3472118231400279953 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2866E3482118231400279953 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2866E34A2118231400279953 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -62,10 +64,10 @@
 		2866E3532118231600279953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2866E3552118231600279953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2866E3562118231600279953 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2866E35C2118231600279953 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2866E35C2118231600279953 /* yjProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yjProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2866E3602118231600279953 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
 		2866E3622118231600279953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2866E3672118231600279953 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2866E3672118231600279953 /* yjProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yjProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2866E36B2118231600279953 /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		2866E36D2118231600279953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2866E37A2118235300279953 /* YJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBaseViewController.h; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 		2866E3C6211945DA00279953 /* YJHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHeader.h; sourceTree = "<group>"; };
 		2866E3C82119496200279953 /* YJTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTools.h; sourceTree = "<group>"; };
 		2866E3C92119496200279953 /* YJTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTools.m; sourceTree = "<group>"; };
+		289AFCBF213789AA00812356 /* NSString+Date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
+		289AFCC0213789AA00812356 /* NSString+Date.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
 		28B8354C211C4D370045DF17 /* LargeTitleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargeTitleTableViewController.h; sourceTree = "<group>"; };
 		28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeTitleTableViewController.m; sourceTree = "<group>"; };
 		28B83552211D2E960045DF17 /* StoreCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreCollectionViewController.h; sourceTree = "<group>"; };
@@ -133,6 +137,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28399030212FDE4D0038D82D /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				28399031212FDEF10038D82D /* testDelegate.h */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		28399032212FDFC80038D82D /* largetitle */ = {
+			isa = PBXGroup;
+			children = (
+				28B8354C211C4D370045DF17 /* LargeTitleTableViewController.h */,
+				28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */,
+			);
+			path = largetitle;
+			sourceTree = "<group>";
+		};
 		2866E33B2118231400279953 = {
 			isa = PBXGroup;
 			children = (
@@ -148,9 +169,9 @@
 		2866E3452118231400279953 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2866E3442118231400279953 /* Demo.app */,
-				2866E35C2118231600279953 /* DemoTests.xctest */,
-				2866E3672118231600279953 /* DemoUITests.xctest */,
+				2866E3442118231400279953 /* yjProject.app */,
+				2866E35C2118231600279953 /* yjProjectTests.xctest */,
+				2866E3672118231600279953 /* yjProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,8 +181,6 @@
 			children = (
 				28B8355C211D30D20045DF17 /* Main */,
 				2866E3792118231C00279953 /* YJBaseFoundation */,
-				28B8354C211C4D370045DF17 /* LargeTitleTableViewController.h */,
-				28B8354D211C4D370045DF17 /* LargeTitleTableViewController.m */,
 				28B8356421215CDE0045DF17 /* 各种 */,
 				2866E34A2118231400279953 /* ViewController.h */,
 				2866E34B2118231400279953 /* ViewController.m */,
@@ -244,6 +263,8 @@
 				28B83556211D30680045DF17 /* UIColor+FJUIColor_HEX.m */,
 				28B83559211D309D0045DF17 /* UIView+Metrics.h */,
 				28B8355A211D309D0045DF17 /* UIView+Metrics.m */,
+				289AFCBF213789AA00812356 /* NSString+Date.h */,
+				289AFCC0213789AA00812356 /* NSString+Date.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -261,6 +282,8 @@
 		28B8356421215CDE0045DF17 /* 各种 */ = {
 			isa = PBXGroup;
 			children = (
+				28399032212FDFC80038D82D /* largetitle */,
+				28399030212FDE4D0038D82D /* delegate */,
 				28B8356621215D070045DF17 /* 锁 */,
 				28B8356521215CF00045DF17 /* 仿appStore */,
 			);
@@ -314,9 +337,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2866E3432118231400279953 /* Demo */ = {
+		2866E3432118231400279953 /* yjProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2866E3702118231600279953 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildConfigurationList = 2866E3702118231600279953 /* Build configuration list for PBXNativeTarget "yjProject" */;
 			buildPhases = (
 				D75B237C5B0C9B051C117417 /* [CP] Check Pods Manifest.lock */,
 				2866E3402118231400279953 /* Sources */,
@@ -328,14 +351,14 @@
 			);
 			dependencies = (
 			);
-			name = Demo;
+			name = yjProject;
 			productName = Demo;
-			productReference = 2866E3442118231400279953 /* Demo.app */;
+			productReference = 2866E3442118231400279953 /* yjProject.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2866E35B2118231600279953 /* DemoTests */ = {
+		2866E35B2118231600279953 /* yjProjectTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2866E3732118231600279953 /* Build configuration list for PBXNativeTarget "DemoTests" */;
+			buildConfigurationList = 2866E3732118231600279953 /* Build configuration list for PBXNativeTarget "yjProjectTests" */;
 			buildPhases = (
 				AEEE695D9B13FE98CA133C28 /* [CP] Check Pods Manifest.lock */,
 				2866E3582118231600279953 /* Sources */,
@@ -347,14 +370,14 @@
 			dependencies = (
 				2866E35E2118231600279953 /* PBXTargetDependency */,
 			);
-			name = DemoTests;
+			name = yjProjectTests;
 			productName = DemoTests;
-			productReference = 2866E35C2118231600279953 /* DemoTests.xctest */;
+			productReference = 2866E35C2118231600279953 /* yjProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2866E3662118231600279953 /* DemoUITests */ = {
+		2866E3662118231600279953 /* yjProjectUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2866E3762118231600279953 /* Build configuration list for PBXNativeTarget "DemoUITests" */;
+			buildConfigurationList = 2866E3762118231600279953 /* Build configuration list for PBXNativeTarget "yjProjectUITests" */;
 			buildPhases = (
 				04355B1B680BB2B3BF4B1622 /* [CP] Check Pods Manifest.lock */,
 				2866E3632118231600279953 /* Sources */,
@@ -366,9 +389,9 @@
 			dependencies = (
 				2866E3692118231600279953 /* PBXTargetDependency */,
 			);
-			name = DemoUITests;
+			name = yjProjectUITests;
 			productName = DemoUITests;
-			productReference = 2866E3672118231600279953 /* DemoUITests.xctest */;
+			productReference = 2866E3672118231600279953 /* yjProjectUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -382,6 +405,7 @@
 				TargetAttributes = {
 					2866E3432118231400279953 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					2866E35B2118231600279953 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -393,7 +417,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2866E33F2118231400279953 /* Build configuration list for PBXProject "Demo" */;
+			buildConfigurationList = 2866E33F2118231400279953 /* Build configuration list for PBXProject "YJProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -406,9 +430,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2866E3432118231400279953 /* Demo */,
-				2866E35B2118231600279953 /* DemoTests */,
-				2866E3662118231600279953 /* DemoUITests */,
+				2866E3432118231400279953 /* yjProject */,
+				2866E35B2118231600279953 /* yjProjectTests */,
+				2866E3662118231600279953 /* yjProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -532,6 +556,7 @@
 				28B83560211D72F60045DF17 /* UIView+Style.m in Sources */,
 				28B8354E211C4D370045DF17 /* LargeTitleTableViewController.m in Sources */,
 				28B83554211D2E960045DF17 /* StoreCollectionViewController.m in Sources */,
+				289AFCC1213789AA00812356 /* NSString+Date.m in Sources */,
 				2866E3C5211861DA00279953 /* YJHTTPTool.m in Sources */,
 				2866E37C2118235300279953 /* YJBaseViewController.m in Sources */,
 				2866E3492118231400279953 /* AppDelegate.m in Sources */,
@@ -560,12 +585,12 @@
 /* Begin PBXTargetDependency section */
 		2866E35E2118231600279953 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2866E3432118231400279953 /* Demo */;
+			target = 2866E3432118231400279953 /* yjProject */;
 			targetProxy = 2866E35D2118231600279953 /* PBXContainerItemProxy */;
 		};
 		2866E3692118231600279953 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2866E3432118231400279953 /* Demo */;
+			target = 2866E3432118231400279953 /* yjProject */;
 			targetProxy = 2866E3682118231600279953 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -641,7 +666,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -693,7 +718,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -705,16 +730,23 @@
 			baseConfigurationReference = BDAFBD6136F805D57F1B1BB5 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B893F2ZP58;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_PREFIX_HEADER = /Users/FunnyUncle1/Desktop/baseFile/YJBaseFoundation/Demo/Demo/Main/YJPch.pch;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yj.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo/各种/Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -724,16 +756,22 @@
 			baseConfigurationReference = EF76DE99AF2CA227D96BB86D /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B893F2ZP58;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_PREFIX_HEADER = /Users/FunnyUncle1/Desktop/baseFile/YJBaseFoundation/Demo/Demo/Main/YJPch.pch;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yj.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yj.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo/各种/Demo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -753,7 +791,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yj.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJProject.temp_caseinsensitive_rename.app/YJProject.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -772,7 +810,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yj.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJProject.temp_caseinsensitive_rename.app/YJProject.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -815,7 +853,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2866E33F2118231400279953 /* Build configuration list for PBXProject "Demo" */ = {
+		2866E33F2118231400279953 /* Build configuration list for PBXProject "YJProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2866E36E2118231600279953 /* Debug */,
@@ -824,7 +862,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2866E3702118231600279953 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+		2866E3702118231600279953 /* Build configuration list for PBXNativeTarget "yjProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2866E3712118231600279953 /* Debug */,
@@ -833,7 +871,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2866E3732118231600279953 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
+		2866E3732118231600279953 /* Build configuration list for PBXNativeTarget "yjProjectTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2866E3742118231600279953 /* Debug */,
@@ -842,7 +880,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2866E3762118231600279953 /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
+		2866E3762118231600279953 /* Build configuration list for PBXNativeTarget "yjProjectUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2866E3772118231600279953 /* Debug */,

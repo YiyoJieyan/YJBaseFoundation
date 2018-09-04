@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LargeTitleTableViewControllerDelegate <NSObject>
+
+@optional
+
+- (void)clickCellIndex:(NSInteger)index;
+
+@end
+
 @interface LargeTitleTableViewController : UITableViewController
+
+@property (nonatomic, weak)id<LargeTitleTableViewControllerDelegate>delegate;
 
 @end

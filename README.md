@@ -1,3 +1,4 @@
 # YJBaseFoundation
 
-xxxxxxxxxxxxx
+local cb
+

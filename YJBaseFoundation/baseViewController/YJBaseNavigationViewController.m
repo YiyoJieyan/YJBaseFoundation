@@ -15,8 +15,20 @@
 @implementation YJBaseNavigationViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [super viewDidLoad];//#8B4A4C
+    
+}
+
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+//    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]init];
+//    
+//    backItem.title = @"";
+//    [viewController.navigationItem setBackBarButtonItem:backItem];
+    if (self.childViewControllers.count != 0) {
+        [viewController setHidesBottomBarWhenPushed:YES];
+    }
+    [super pushViewController:viewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -26,6 +26,7 @@
 		28319CAE2147998400CE1C9B /* YJBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28319CA32147998400CE1C9B /* YJBaseTabBarViewController.m */; };
 		28319CB521479CDA00CE1C9B /* YJHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28319CB321479CDA00CE1C9B /* YJHomeTableViewController.m */; };
 		28319CB621479CDA00CE1C9B /* YJHomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28319CB421479CDA00CE1C9B /* YJHomeTableViewController.xib */; };
+		28319CBE2147BF9300CE1C9B /* YJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28319CBD2147BF9300CE1C9B /* YJViewController.m */; };
 		6710BFBADB7278DBF27074AE /* libPods-YJProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D72890A5ACE819C6F95B51 /* libPods-YJProjectUITests.a */; };
 		B1F502C8CDFE683C44804594 /* libPods-YJProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE4235519987AB96D47A66A /* libPods-YJProject.a */; };
 		C43692923BB7E8719B6C2470 /* libPods-YJProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE4FCB1EC2152C542727806 /* libPods-YJProjectTests.a */; };
@@ -90,6 +91,8 @@
 		28319CB221479CDA00CE1C9B /* YJHomeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJHomeTableViewController.h; sourceTree = "<group>"; };
 		28319CB321479CDA00CE1C9B /* YJHomeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJHomeTableViewController.m; sourceTree = "<group>"; };
 		28319CB421479CDA00CE1C9B /* YJHomeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YJHomeTableViewController.xib; sourceTree = "<group>"; };
+		28319CBC2147BF9300CE1C9B /* YJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViewController.h; sourceTree = "<group>"; };
+		28319CBD2147BF9300CE1C9B /* YJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJViewController.m; sourceTree = "<group>"; };
 		36127DCEF2409936B5713D12 /* Pods-YJProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJProject/Pods-YJProject.debug.xcconfig"; sourceTree = "<group>"; };
 		61D72890A5ACE819C6F95B51 /* libPods-YJProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7442EA4C07C0BEDA0FDDFFDA /* Pods-YJProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJProject/Pods-YJProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 		28319CB121479B5400CE1C9B /* One */ = {
 			isa = PBXGroup;
 			children = (
+				28319CBC2147BF9300CE1C9B /* YJViewController.h */,
+				28319CBD2147BF9300CE1C9B /* YJViewController.m */,
 			);
 			path = One;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28319CAE2147998400CE1C9B /* YJBaseTabBarViewController.m in Sources */,
+				28319CBE2147BF9300CE1C9B /* YJViewController.m in Sources */,
 				28319CA92147998400CE1C9B /* UIView+Metrics.m in Sources */,
 				28319CA42147998400CE1C9B /* YJTools.m in Sources */,
 				28319C662147996400CE1C9B /* main.m in Sources */,

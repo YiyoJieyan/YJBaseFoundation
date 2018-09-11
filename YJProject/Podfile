@@ -1,0 +1,22 @@
+
+
+target 'YJProject' do
+  
+pod 'SVProgressHUD'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'WRNavigationBar'
+
+  target 'YJProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'YJProjectUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
